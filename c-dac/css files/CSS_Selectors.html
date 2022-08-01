@@ -1,0 +1,97 @@
+<!-- 
+
+    Selectors : They are used to select the element/tags from the Web Page
+    Types of Selectors :
+        - CSS Tag/Simple Selectors
+        - CSS Class Selector
+        - CSS ID Selector
+        - CSS Generic Selector
+        - CSS Universal Selectors
+        - CSS Pseudo Selectors
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style type="text/css">
+        /* Simple/Tag Selectors */
+        p{
+            background-color: cyan;
+        }
+        h1,div{
+            background-color: blueviolet;
+        }
+
+        /* Class Selectors */
+        /* We will begin the classname with '.' */
+        /* One class can be used by many tags */
+        /* One tag/element can have many classes*/
+        .even{
+            border : 3px solid black;
+        }
+        .bgyellow{
+            background-color: yellow;
+        }
+
+        /* ID Selectors */
+        /* We will begin the classname with '#' */
+        /* We cannot use the ID in more than 1 tag/element*/
+        #UniqHead{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* Generic Selector*/
+        p.even{
+            color: red;
+        }
+
+        /* Universal Selectors*/
+        *{
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Pseudo Selectors : Used to add special Effect */
+        input:hover,button:hover{
+            border: 2px solid rgb(79, 75, 75);
+            background-color: lightpink;
+        }
+
+        input:focus{
+            background-color: lightcoral;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1 class="even bgyellow">Heading 2</h1>
+    <h1>Heading 3</h1>
+    <h1 class="even">Heading 4</h1>
+    <h1>Heading 5</h1>    
+    <h1 class="even" id="UniqHead">Heading 6</h1>
+    
+    <div>This is a Divsion 1</div>
+    <div class="even bgyellow">This is a Divsion 2</div>
+    <div>This is a Divsion 3</div>
+    <div class="even">This is a Divsion 4</div>
+    <div>This is a Divsion 5</div>    
+    <div class="even">This is a Divsion 6</div>
+    
+    <p>This is a Paragragh 1</p>
+    <p class="even bgyellow">This is a Paragragh 2</p>
+    <p>This is a Paragragh 3</p>
+    <p class="even">This is a Paragragh 4</p>
+    <p>This is a Paragragh 5</p>    
+    <p class="even">This is a Paragragh 6</p>
+
+    <form>
+        Name : <input type="text" name="" id=""><br>
+        Password : <input type="password" name="" id=""><br>
+        <button>Submit Now</button><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <hr>
+    <script>
+
+        // we use 'var' for using defining variables
+        var num1 = 90;
+        var num2 = 90;
+        console.log(num1 + num2)
+        var name = "Unknown";
+
+        document.write("<h3>")
+        document.write("Value of num1 : " + num1 + "<br>")
+        document.write("Your name is " + name)
+        document.write("</h3>")
+
+        // Alert Box :
+        altmsg = alert("Hello, This is an alert Message !!");
+
+        // Meaning less
+        document.write("<br>Your Alert answer : " + altmsg)
+
+        // Confirm Box :
+        // camelCase Convention
+        delPostAns = confirm("Do you want to delete this post ??")
+        document.write("<br>Want to Delete Post : " + delPostAns)
+
+        // prompt Message :
+        userName = prompt("Enter the name : ")
+        document.write("<br>Your Entered Name is " + userName)
+
+        // prompt will return the data in string form
+
+        // Taking 2 numbers and adding them
+        num1 = prompt("Enter num1 with prompt: ")
+        num2 = prompt("Enter num2 with prompt: ")
+        console.log("Adding using prompt : "+(num1+num2))
+
+        // For taking integer value 
+        num1 = parseInt(prompt("Enter num1 with prompt and using parseInt : "))
+        num2 = parseInt(prompt("Enter num2 with prompt and using parseInt : "))
+        console.log("Adding using prompt with parseInt : "+(num1+num2))
+
+        // For taking a float value
+        num1 = parseFloat(prompt("Enter num1 with prompt and using parseFloat : "))
+        num2 = parseFloat(prompt("Enter num2 with prompt and using parseFloat : "))
+        console.log("Adding using prompt with parseFloat : "+(num1+num2))
+        
+    </script>
+</body>
+
+</html>

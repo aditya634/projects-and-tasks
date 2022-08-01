@@ -1,0 +1,8 @@
+/* You can see the Border Properties in 4_CSS_Border.html */
+/* This is an External CSS */
+h1{
+    border: 5px solid black;
+}
+div{
+    border: 5px solid red;
+}

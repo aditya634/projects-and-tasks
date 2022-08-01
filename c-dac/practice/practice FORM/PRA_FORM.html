@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Forms</title>
+
+    <style type="text/css">
+		marquee {
+			border: 2px solid green;
+		}
+	</style>
+
+</head>
+
+<body bgcolor="green" >
+    <h1 align="center">The World of Fruit</h1>
+    <hr>
+    <h2 align="center">Fruit Survey</h2>
+    <form>
+        <marquee behavior="alternate" scrollamount="13">We Sell Healthy... You Buy Healthy</marquee>
+        <table align="center">
+
+            <tr>
+                </b><td>Name :</td>
+                <td><input type="text" name="" required></td>
+            </tr>
+
+            <tr>
+                <td>Address :</td>
+                <td><input type="text" name=""></td>
+            </tr>
+
+            <tr>
+                <td>
+                    Email : 
+                </td>
+                <td>
+                    <input type="email" name="" size="40" required>
+                </td>
+            </tr>
+           
+            <tr>
+                <td>
+                    Phone Number :
+                </td>
+                <td>
+                    <input type="tel" name="" minlength="7" maxlength=10 required>
+                </td>
+            </tr>
+             
+            <tr>
+                <td>
+                    How many piece's of fruit do you eat per day? :
+                </td>
+                <td>
+                    <br>
+                    <input type="radio" name="userGen">0
+                    <br>
+                    <input type="radio" name="userGen">1
+                    <br>
+                    <input type="radio" name="userGen">2
+                    <br>
+                    <input type="radio" name="userGen">More Than 2
+        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    My favourite fruit :
+                </td>
+                <td>
+                    <select>
+                        <!-- option*8{$} -->
+                        <option> Apple </option>
+                        <option> Bnanan </option>
+                        <option> Chiku </option>
+                        <option> Mango </option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Would you like a brochure ?
+                </td>
+                <td>
+                    <input type="checkbox" name="">
+                </td>
+            </tr>
+
+           <tr>
+                <td>
+                <button type="submit" align="center">Submit</button>
+                </td>
+           </tr>
+           
+        </table>
+    </form>
+
+</body>
+
+</html>

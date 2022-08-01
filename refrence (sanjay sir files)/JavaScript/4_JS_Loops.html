@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loops</title>
+</head>
+<body>
+    <script>
+        // Loops are used to repeat a piece of code !
+        
+        // Printing n1 to n2 : 
+        var n1 = parseInt(prompt("Enter starting range : "));
+        var n2 = parseInt(prompt("Enter Ending range : "));
+        var i;
+        
+        // For loop :
+        document.write("<h1>For Loop</h1>")
+        for (i = n1; i <= n2; i++) {
+            document.write("<div>"+i+"</div>")   
+        }
+
+        // While Loop :
+        var j = n1;
+        while (j<=n2) {
+            document.write("<div>"+j+"</div>")   
+            j++;
+        }
+
+        // do-while loop :
+        var k=n1;
+        do {
+            document.write("<div>"+j+"</div>")   
+            k++;
+        } while (n1<=n2);
+    </script>
+</body>
+</html>

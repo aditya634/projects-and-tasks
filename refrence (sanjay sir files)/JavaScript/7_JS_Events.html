@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling</title>
+
+    <script>
+        
+        function clicked() {
+            console.log("onclick Event Fired !!")
+        }
+
+        function mouseover() {
+            console.log("mouseover Event Fired !!")
+        }
+
+        function mouseout() {
+            console.log("mouseout Event Fired !!")
+        }
+
+        function mousemove() {
+            console.log("mousemove Event Fired !!")
+        }
+
+        function mouseenter() {
+            console.log("mouseenter Event Fired !!")
+        }
+
+        function mouseleave() {
+            console.log("mouseleave Event Fired !!")
+        }
+
+        function doubleclicked() {
+            console.log("doubleclick Event Fired !!")
+        }
+
+        function focusing() {
+            console.log("Focused Event Fired !!")
+        }
+
+        function keyup() {
+            console.log("keyup Event Fired !!")
+        }
+
+        function keydown() {
+            console.log("keydown Event Fired !!")
+        }
+
+        // Keypress will not fired on all keys like ctrl,alt,esc . . . .
+        function keypress() {
+            console.log("keypress Event Fired !!")
+        }
+
+        function blured() {
+            console.log("blur Event Fired !!")
+        }
+
+        function fetchData() {
+            console.log("You have Clicked the Button !!")
+            var Name = document.getElementById("userName").value;
+            console.log("Name : " + Name)
+            var Email = document.getElementById("userEmail").value;
+            console.log("Email : " + Email)
+            var Password = document.getElementById("userPassword").value;
+            console.log("Password : " + Password)
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <hr>
+    Name : <input id="userName" type="text" onfocus="focusing()" onblur="blured()" onkeydown="keydown()"
+        onkeypress="keypress()" onkeyup="keyup()"><br><br>
+    Email : <input id="userEmail" type="email" onfocus="focusing()" onblur="blured()" onkeydown="keydown()"
+        onkeypress="keypress()" onkeyup="keyup()"><br><br>
+    Password : <input id="userPassword" type="password" onfocus="focusing()" onblur="blured()" onkeydown="keydown()"
+        onkeypress="keypress()" onkeyup="keyup()"><br><br>
+
+    <button type="button" onclick="fetchData()">Submit Form</button><br><br><br>
+
+    <button type="button" onclick="clicked()">Click Button</button><br><br>
+    <button type="button" onmouseover="mouseover()">Take your mouse over it</button><br><br>
+    <button type="button" onmouseout="mouseout()">Take your mouse out from it</button><br><br>
+    <button type="button" onmousemove="mousemove()">Move your mouse</button><br><br>
+    <button type="button" onmouseenter="mouseenter()">Enter your mouse</button><br><br>
+    <button type="button" onmouseleave="mouseleave()">Leave your mouse</button><br><br>
+    <button type="button" ondblclick="doubleclicked()">Double click Button</button><br><br>
+
+</body>
+
+</html>

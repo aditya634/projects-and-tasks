@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript function</h1>
+    <script>
+        // Functions are used to repeat a piece of code when we want 
+        // They are used to reduce the code and make the code reusable
+        // Function Syntax :
+        //     function <function-name>(<arguments>){
+        //          // code that we want in function
+        //     }
+
+        // Function without return type & without Arguements
+        function add1() {
+            var a=10;
+            var b=20;
+            document.write("Addition :" +(a+b)+ "<br>");
+        }
+
+        // Function without return type & with arguements
+        function sub(x,y) {
+            document.write("Subtraction : " +(x-y)+ "<br>");
+        }
+
+        // Function with return type & without arguements
+        function mul() {
+            var p=2;
+            var q=4;
+            return p*q;
+        }
+
+        // Function with return type & with arguements
+        function div(m,n) {
+            var m=9;
+            var n=3;
+            return m/n;
+        }
+
+        // Calling all the functions
+        
+        // Calling the function without return type & without Arguements
+        add1();
+        
+        // Calling the function without return type & with Arguements
+        sub(2,3);
+
+        // Calling the function with return type & without Arguements
+        var result = mul();
+        document.write("Multiplication : " +result+ "<br>");
+
+        // Calling the function with return type & with Arguements
+        var result2 = div();
+        document.write("Devision : " +result2+ "<br>");
+    </script>
+</body>
+</html>

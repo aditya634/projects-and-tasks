@@ -1,0 +1,54 @@
+<!-- Not Usefull Much, Iske Koi Property kaam ke nahi hee 😅 !! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        ol{
+            /* Used to define what kind of bullet we want */
+            /* Not Used Much because if we want the bullet as disc, then we should use <ul> tag. No need to use <ol> tag */
+            list-style-type: disc;
+            list-style-type: georgian;
+            list-style-type: lower-greek;
+            list-style-type: lower-latin;
+            list-style-type: armenian;
+            list-style-type: disc;
+            list-style-type: square;
+
+            /* Used to set the image as a bullet */
+            /* Not Used Much because the images are too big that they destroy the view of the Page */
+            /* Try it by Uncommenting the next 2 lines : */
+            
+            /* list-style-image: url("myImage.png"); */
+            /*margin-left: 100px;*/
+
+            /* Used to set whether the bullets will be inside/outside the <li> tags */
+            list-style-position: outside;
+            list-style-position: inside;
+        }
+        li{
+            border:2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <hr>
+    <ol>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Kiwi</li>
+        <li>Mango</li>
+    </ol>
+
+    <h1>Alternative for Image as Bullets : </h1>
+    <hr>
+    <img src="myImage.png" height="12px"> Apple<br>
+    <img src="myImage.png" height="12px"> Banana<br>
+    <img src="myImage.png" height="12px"> Kiwi<br>
+    <img src="myImage.png" height="12px"> Mango<br>
+</body>
+</html>

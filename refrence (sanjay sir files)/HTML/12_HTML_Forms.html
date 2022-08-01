@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <H1> HTML FORM</H1>
+    <form>
+        <!-- input tag help us to take input from the user in the webpage-->
+        <!-- { shortcut } : input:text ===> <input type="text" name="" id=""> -->
+
+        <!-- Input tag is a inline element and it doesn't start with the new line -->
+        <!-- we can use div tag , because div tag is a block-level element and it start with the new line-->
+        <!-- required : this attribute specify that the user must fill a value in the field before submitting the form -->
+
+        <!-- To get text as Input -->
+        <div>
+            <!-- label : is used to highlight/connect the corresponding field on clicking the field name-->
+            <label for="Myname">Name : </label>
+            <!-- Inside for , we use the id of the element we need to make highlight -->
+            <input type="text" name="User_Name" id="Myname" required>
+        </div>
+        <br> <!-- Later , we use CSS to make space between two-->
+        <div>
+            <label for="Myrole">Role:</label>
+            <input type="text" name="User_Role" id="Myrole">
+        </div>
+        <br>
+
+        <!-- To get Email Id as Input-->
+        <div>
+            <label for="Myemail"> Email:</label>
+            <input type="email" name="User_EMail" id="Myemail">
+        </div>
+        <br>
+
+        <!-- To get Date as Input-->
+        <div>
+            <label for="Date">Date : </label>
+            <input type="date" name="User_Submitting_date" id="Date">
+        </div>
+        <br>
+
+        <!--To get Time as input-->
+        <div>
+            <label for="Time">Time : </label>
+            <input type="time" name="User_Submitting_time" id="Time">
+        </div>
+        <br>
+
+        <!-- To get Number as Input-->
+
+        <div>
+            <label for="Myphone">Phone Number : </label>
+            <input type="number" name="User_Phone" id="Myphone">
+        </div>
+        <br>
+
+        <!-- To add Checkbox in webpage-->
+        <!-- Allow to select multiple option-->
+        <!-- To select any option by default then we use the keyword checked in input tag and that option will be bydefault checked-->
+        <div>Which facilty you want ?</div><br>
+        <div>
+            <input type="checkbox" name="Hostel" id="hostel">
+            <label for="hostel">Hostel</label>
+        </div><br>
+        <div>
+            <input type="checkbox" name="Gym" id="gym">
+            <label for="gym">Gym</label>
+        </div><br>
+        <div>
+            <input type="checkbox" name="Pool" id="pool">
+            <label for="pool">Pool</label>
+        </div><br>
+        <div>
+            <input type="checkbox" name="Transportation" id="Transport" checked>
+            <!--By default checked-->
+            <label for="Transport">Transportation</label>
+        </div><br>
+
+        <!-- To add Radio in webpage-->
+        <!-- Allow to select only one option-->
+        <!-- To select any option by default then we use the keyword checked in input tag and that option will be bydefault checked-->
+        <div>Gender :</div><br>
+        <div>
+            <input type="radio" name="User_Gender" id="Male" checked>
+            <!--By default checked-->
+            <label for="Male">Male</label>
+        </div><br>
+        <div>
+            <input type="radio" name="User_Gender" id="Female">
+            <label for="Female">Female</label>
+        </div><br>
+        <div>
+            <input type="radio" name="User_Gender" id="Others">
+            <label for="Others">Others</label>
+        </div><br>
+
+        </div>
+        <br>
+        <!-- To get text by the user -->
+        <label for="User_typed_text">Write about yourself : </label>
+        <br><textarea name="User_text" cols="60" rows="10" id="Mytext" placeholder="Yeah" required></textarea>
+        <br>
+        <br>
+
+        <label for="Sem"> In which Semester you are ?</label>
+        <!--To select any option by default then we use the keyword selected in input tag and that option will be bydefault checked-->
+        <select name="User_Semester" id="Sem" placeholder="Yeah" required>
+            <option value="1st">I</option>
+            <!--By default checked-->
+            <option value="2nd">II</option>
+            <option value="3rd">III</option>
+            <option value="4th">IV</option>
+            <option value="5th">V</option>
+            <option value="6th">VI</option>
+            <option value="7th">VII</option>
+            <option value="8th">VIII</option>
+        </select>
+        <br>
+        <br>
+        <!-- To Submit the form -->
+        <input type="submit" value="Submit Now">
+
+        <!-- To reset the form (clear all the data filled in form)-->
+        <input type="reset" value="Reset Now">
+
+
+    </form>
+
+</body>
+
+</html>

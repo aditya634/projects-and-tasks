@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        #logintext {
+            font-size: 50px;
+            font-weight: bolder;
+            text-align: center;
+            margin: 15px;
+        }
+
+        #welcome{
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .inputs {
+            width: 300px;
+            /* border: 2px solid black; */
+            outline: none;
+            font-size: 25px;
+            margin: 10px;
+            padding: 10px;
+            font-weight: bolder;
+
+        }
+
+        #status {
+            font-size: 25px;
+            margin: 10px;
+            font-weight: bolder;
+
+        }
+
+        .Submitbtn {
+            width: 250px;
+            background-color: green;
+            margin: 20px 10px;
+            font-size: 25px;
+            color: white;
+            padding: 10px;
+            /* font-weight: 600; */
+        }
+
+        .Submitbtn:hover {
+            background-color: rgb(1, 59, 1);
+            cursor: pointer;
+            font-weight: bolder;
+
+        }
+
+        #forget {
+            font-size: 25px;
+            font-weight: bolder;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div align="Center">
+        <!-- <img src="bg.jpg" width="40%" alt="Background Image"> -->
+
+        <h1 id="welcome">Welcome to my Portal :)</h1>
+        <img src="myImage.png" width="10%" alt="Background Image">
+    </div>
+    <div>
+        <h1 id="logintext">Login</h1>
+        <div align="center" id="status"></div>
+        <div align="center">
+            <input class="inputs" type="text" name="User_id" id="User_id" placeholder="Username">
+        </div>
+        <div align="center">
+            <input class="inputs" type="password" name="User_password" id="User_password" placeholder="Password">
+        </div>
+        <div align="center">
+            <button class="Submitbtn" id="login_submit" onclick="check_user()">Submit</button>
+        </div>
+        <div align="center"><a id="forget" href="./8_JS_comingSoon.html">Forget Password?</a></div>
+    </div>
+
+    <script>
+        function check_user() {
+            var name = document.getElementById('User_id').value;
+            var password = document.getElementById('User_password').value;
+            console.log(name, password);
+
+            if (name == "Admin" && password == "Admin") {
+                document.getElementById('status').innerHTML = "Login Successfull !";
+                document.getElementById('status').style.color = "Green";
+                window.location.href = "./8_JS_Welcome.html";
+            }
+            else if (name == null || name == "" || password == null || password == "") {
+                if (name == null || name == "") {
+                    document.getElementById('status').innerHTML = "Fields are Empty !";
+                    document.getElementById('status').style.color = "red";
+                    document.getElementById('User_id').style.border = "4px solid #f71818";
+                }
+                else {
+                    console.log("Name filled");
+                    document.getElementById('User_id').style.border = "5px solid rgb(128 128 128 / 80%)";
+                }
+                if (password == null || password == "") {
+                    document.getElementById('status').innerHTML = "Fields are Empty !";
+                    document.getElementById('status').style.color = "red";
+                    document.getElementById('User_password').style.border = "4px solid #f71818";
+                }
+                else {
+                    console.log("Password filled");
+                    document.getElementById('User_password').style.border = "5px solid rgb(128 128 128 / 80%)";
+                }
+            }
+            else {
+                document.getElementById('status').innerHTML = "Invalid Username or Password";
+                document.getElementById('status').style.color = "red";
+                document.getElementById('User_password').style.border="5px solid rgb(128 128 128 / 80%)";
+                document.getElementById('User_id').style.border="5px solid rgb(128 128 128 / 80%)";
+            }
+        }
+    </script>
+</body>
+
+</html>

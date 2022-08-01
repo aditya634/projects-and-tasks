@@ -1,0 +1,227 @@
+================================================== PHP ==========================================================
+
+# General Syntax of PHP :
+  Anything which we want in PHP will be written in between these tags
+  Also, The text/logical we write in PHP will not be seen to the User
+
+  <?php
+    //code
+  ?>
+_________________________________________________________________________________________________________________
+
+# echo/echo() in PHP :
+  The echo function outputs one or more strings.
+
+  The echo() function is not actually a function, so you are not required to use parentheses with it.
+  However, if you want to pass more than one parameter to echo(), using parentheses will generate a parse error.
+_________________________________________________________________________________________________________________
+
+# Comments in PHP :
+  We cannot add any text or other character in the php tag in between ,it will create error. so if we 
+  have to write some text or remainder, we use comments(//) for it Comments are basically used for programmers
+  to remember the logical approach in the code
+
+  The Comments are of 2 types :
+  1) Single line Comments : it comments only single line and can be done using (//)
+     Example : // This is single line comments
+  2) Multi line Comments : it comments more than one line and can be done using (/*...*/)
+     Example : /* 
+                  This is first line commented
+                  This is Second line commented
+                  This is Third line commented
+               */
+_________________________________________________________________________________________________________________
+
+# Variables in PHP :
+  We can make Variables in PHP using dollar sign($)
+  The Variables that we make in PHP are dynamic and we not need to give the datatype of it 
+  It will automatically detects the datatype
+
+  Also PHP is not case sensitive language
+
+  Example : In PHP keywords like echo,class,function etc.... are not case sensitive
+            echo & ECHO both have the same meaning 
+            This is not the case with the Variables
+
+_________________________________________________________________________________________________________________
+
+# How to bring text on next line :
+  we can bring text on new line using <br> tag 
+_________________________________________________________________________________________________________________
+
+# Operators in PHP :
+  Operators are used to do mathematical operation and logical operation
+  In PHP, Operators are of 5 types :
+  -> Arithmetic Operators  {+,-,/,*,%}
+  -> Assignment Operators  {=,+=,-=,/=,*=}
+  -> Comparison Operators  {==,>=,<=,!=}
+  -> Increment/Decrement Operators  {++,--}
+  -> Logical Operators {and(&&),or(||),xor,not(!)}
+_________________________________________________________________________________________________________________
+
+# Datatypes in PHP :
+  1. Strings
+  2. Integer
+  3. Float
+  4. Boolean
+  5. Array
+  6. Object
+  NOTE : we can make a Variable constant i.e, its value will remain same all over the program and will not change
+         It is believed that it is good to declare/define a constant Variable on the top of PHP
+         It can be done using function define
+         Syntax : define(<Var_name>,<Var_value>);
+_________________________________________________________________________________________________________________
+
+# Conditional Statement :
+  1)If Statement :
+    If statement is used to execute the block of code exist inside the If statement only if the specified 
+    condition is true.
+
+  2)If-else Statement :
+    If-else statement is slightly different from If statement. It executes one block of code if the specified 
+    condition is true and another block of code if the condition is false.
+    
+  3)If-else-If Statement / Else if ladder:
+    If-else-If is a special statement used to combine multiple If?.else statements. So, we can check multiple 
+    conditions using this statement.
+
+  4)Nested If Statement :
+    The nested if statement contains the if block inside another if block. The inner if statement executes 
+    only when specified condition in outer if statement is true.
+_________________________________________________________________________________________________________________
+
+# Arrays :
+  In PHP,an array is a compound data type. It can store multiple values of same data type in a single variable.
+  It's index starts from 0
+  we cannot directly see the whole array , it will create error
+_________________________________________________________________________________________________________________
+
+# Loops :
+  Loops are used to execute the same block of code again and again, as long as a certain condition is true.
+  In PHP, we have the following loop types:
+    
+  1)while loop:- 
+    Loops through a block of code as long as the specified condition is true
+
+    Syntax : 
+    while (condition is true) 
+    {
+      code to be executed;
+    } 
+
+  2)do-while :-
+    Loops through a block of code once, and then repeats the loop as long as the specified condition is true
+
+    Syntax : 
+    do 
+    {
+      code to be executed;
+    } while (condition is true); 
+
+  3)for :- 
+    Loops through a block of code a specified number of times
+
+    Syntax : 
+    for (initialize counter; test counter; increment counter) 
+    {
+      code to be executed for each iteration;
+    } 
+
+  4)foreach :- 
+    Loops through a block of code for each element in an array.For every loop iteration, the value of the 
+    current array element is assigned to $value and the array pointer is moved by one, until it reaches the 
+    last array element.
+
+    Syntax : 
+    foreach ($array as $value) 
+    {
+      code to be executed;
+    } 
+_________________________________________________________________________________________________________________
+
+# Break and Continue Statement :
+  The break statement can also be used to jump out of a loop while The continue statement breaks one iteration
+  (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.
+_________________________________________________________________________________________________________________
+
+# Functions :
+  PHP has over 1000 built-in functions that can be called directly, from within a script, to perform a specific 
+  task.
+
+  Besides the built-in PHP functions, it is possible to create your own functions.
+
+    A function is a block of statements that can be used repeatedly in a program.
+    A function will not execute automatically when a page loads.
+    A function will be executed by a call to the function.
+  
+  A user-defined function declaration starts with the word function.
+  A function name must start with a letter or an underscore. 
+  Function names are NOT case-sensitive.
+
+  Syntax :
+  function functionName() 
+  {
+    code to be executed;
+  } 
+
+  The opening curly brace ( { ) indicates the beginning of the function code, and the closing curly brace ( } )
+  indicates the end of the function. The function execute the code. To call the function, just write its name
+  followed by brackets ().
+
+  A User defined function can also have infinte arguments 
+_________________________________________________________________________________________________________________
+
+# Strings in PHP :
+  A string is a sequence of characters, like "Hello world!".
+
+  We can do many operation with string :
+  1) String concatation :
+     If we want to concate/join two or more string togther we can do that using "."(dot operator)
+     Also we can use this method to echo more than one string in output
+  
+  2) String Length :
+     We can find the length of string using strlen() function
+     It return the number of characters in string
+  
+  3) Number of Words in string :
+     We can find the number of words in string using str_word_count() function
+     It will return number of words in string
+
+  4) Reversed String :
+     We can reverse the string using strrev() function
+     It will return Reversed string 
+
+  5) Searching another substring/word :
+     We can find whether the substring/word is present in the string or not using strpos() function
+     It will return index location of the word in string
+     If the word is not present , it will return nothing
+  
+  6) Replacing the substring/word in string :
+     We can replace the substring/word in the string using str_replace() function
+     If the substring/word is present , it will return the replaced string
+     else it will return the same string
+
+  Websites : 
+  https://www.php.net/manual/en/ref.strings.php
+  https://www.guru99.com/php-strings.html
+  https://www.w3schools.com/pHp/php_ref_string.asp
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~``
+
+Predefined Variables
+
+
+A superglobal is a predefined variable that is always accessible, regardless of scope. You can access the PHP superglobals through any function, class, or file.
+
+PHP's superglobal variables are $_SERVER, $GLOBALS, $_REQUEST, $_POST, $_GET, $_FILES, $_ENV, $_COOKIE, $_SESSION.
+
+
+# $_SERVER :
+
+$_SERVER is an array that includes information such as headers, paths, and script locations. The entries in this array are created by the web server.
+
+$_SERVER['SCRIPT_NAME'] returns the path of the current script
+Our example was written in a file called somefile.php, which is located in the root of the web server.

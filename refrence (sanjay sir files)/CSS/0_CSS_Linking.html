@@ -1,0 +1,53 @@
+<!-- 
+    # CSS : Cascading Style Sheet
+        -> Used to add Style in our HTML tags/elements
+        -> We can add CSS in our HTML Page in 3 ways :
+            o Inline CSS
+                - We apply Styling for only one element
+                - In this, we add CSS using style attribute
+            o Internal CSS
+                - We apply Styling for only web page
+                - In this, we add CSS using style tag
+            o External CSS
+                - We apply Styling for one or more web pages
+                - In this, we used to make a external css file (.css)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Linking</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h1{
+            background-color: red;
+        }
+        div{
+            background-color: cyan;
+        }
+    </style>
+
+    <!-- Linking External CSS File : -->
+    <!-- We use link tag for linking External CSS file to this HTML file -->
+    <!-- Here, rel => relationship i.e, what is the relationship of that file with this file 
+               href => URL Location of the source file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+    <h1>Heading 3</h1>
+    <h1>Heading 4</h1>
+
+    <!-- Inline CSS -->
+    <h1 style="background-color: black;color: white;">Heading with Inline CSS</h1>
+    
+    <div>Division 1</div>
+    <div>Division 2</div>
+    <div>Division 3</div>
+    <div>Division 4</div>
+</body>
+</html>

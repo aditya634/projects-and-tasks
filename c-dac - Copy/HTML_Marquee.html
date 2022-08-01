@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Marquee</title>
+	<style type="text/css">
+		marquee {
+			border: 2px solid red;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Scrolling text in webpage -->
+	<marquee>This is <b>scrollable</b> Text.</marquee>
+
+	<!-- Using Scrollamount -->
+	<marquee scrollamount=6>This is Normal Scrolling Text.</marquee>
+	<marquee scrollamount=2>This is Slow Scrolling Text.</marquee>
+	<marquee scrollamount=20>This is Fast Scrolling Text.</marquee>
+
+	<!-- Using direction -->
+	<marquee direction="up">This is Scrolling Text towards up</marquee>
+	<marquee direction="down">This is Scrolling Text towards down</marquee>
+	<marquee direction="left">This is Scrolling Text towards left</marquee>
+	<marquee direction="right">This is Scrolling Text towards right</marquee>
+
+	<!-- Using behavior -->
+	<marquee behavior="scroll">This is Scrolling Text with behavior scroll</marquee>
+	<marquee behavior="slide">This is Scrolling Text with behavior slide</marquee>
+	<marquee behavior="alternate">This is Scrolling Text with behavior alternate</marquee>
+
+	<!-- Using Height & WIdth -->
+	<marquee direction="up" height="200px">This is Scrolling Text towards up</marquee>
+	<marquee direction="down" width="300px">This is Scrolling Text towards down</marquee>
+	<marquee direction="left" height="200px" width="300px">This is Scrolling Text towards left</marquee>
+	<marquee direction="right" width="300px" height="200px">This is Scrolling Text towards right</marquee>
+
+	<!-- Using loop -->
+	<marquee loop=2>This is <b>scrollable</b> Text.</marquee>
+	<marquee loop=3>This is <b>scrollable</b> Text.</marquee>
+	<marquee loop=infinte>This is <b>scrollable</b> Text.</marquee>
+
+	<!-- Using scroll delay -->
+	<marquee scrolldelay=1000>This is scrollable Text.</marquee>
+	<!-- 1000 => 1 sec -->
+
+	<!-- Using bgcolor -->
+	<marquee bgcolor="red">This is <b>scrollable</b> Text.</marquee>
+</body>
+
+</html>

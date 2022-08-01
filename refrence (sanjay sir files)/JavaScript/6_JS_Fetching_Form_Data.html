@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Fetching Forms Data</title>
+</head>
+
+<body>
+
+    <!-- Making a form -->
+    <form name="LoginForm">
+        UserName : <input type="text" id="username" name="uname">
+        <br><br>
+        PassWord : <input type="password" id="userpass" name="upassword">
+        <br><br>
+        <button type="button" onclick="fetchDataByID()">Fetch Data By ID</button>
+        <button type="button" onclick="fetchDataByName()">Fetch Data By Name</button>
+    </form>
+
+    <script>
+
+        // Fetching the Form Data by using the id of the input tag
+        function fetchDataByID() {
+            var uname = document.getElementById("username").value
+            var upass = document.getElementById("userpass").value
+
+            console.log("Username : ",uname)
+            console.log("UserPassword : "+upass)
+        }
+
+        // Fetching the Form Data by using the name of the input tag
+        function fetchDataByName() {
+            var uname = document.LoginForm.uname.value
+            var upass = document.LoginForm.upassword.value
+
+            console.log("Username : ",uname)
+            console.log("UserPassword : "+upass)
+        }
+    </script>
+</body>
+
+</html>
